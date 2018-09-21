@@ -1,0 +1,43 @@
+.blackborder{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  canvas{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .mean{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    button{
+      font-size: 12px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      outline: none;
+      border: 0;
+      background-color: #1976d2;
+      color: #fff;
+      box-shadow: 0 0 20px #fff;
+      margin-right: 15px;
+    }
+    button:last-child{
+      margin-right: 0;
+    }
+    button:hover{
+      transform: scale(1.1)
+    }
+  }
+}

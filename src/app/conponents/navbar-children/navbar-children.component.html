@@ -1,0 +1,5 @@
+<div class="list-children" *ngIf="isNeedShow&&selectIndex===item.index&&item.children">
+  <ul>
+    <li *ngFor="let child of item.children" (click)="linkTo(child.url)" [appCssHighlight]="color">{{child.title}}</li>
+  </ul>
+</div>

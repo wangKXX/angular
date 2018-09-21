@@ -1,0 +1,14 @@
+<div class="blackborder">
+  <div class="mean">
+    <button class="edit" (click)='drawComm(5)'>清屏</button>
+    <button class="edit" (click)='drawComm(6)'>文字</button>
+    <button class="edit" (click)='drawComm(4)'>橡皮</button>
+    <button class="edit" (click)='drawComm(3)'>圆形</button>
+    <button class="edit" (click)='drawComm(2)'>直线</button>
+    <button class="edit" (click)='drawComm(1)'>矩形</button>
+    <button class="edit" (click)='drawComm(0)'>铅笔</button>
+    <button class="edit" (click)='edit()'>编辑</button>
+  </div>
+  <input type="text" id='canvasuserinput' [(ngModel)]='inputTxt' (ngModelChange)='inputValChange($event)' (blur)='inputBlur()'/>
+  <canvas id="canvas" (mousedown)='mouseDownEvent($event)' (mouseup)='mouseUpEvent($event)' (mousemove)='mouseMoveEvent($event)'></canvas>
+</div>

@@ -21,7 +21,12 @@
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
     "core-js": "^2.5.4",
+    "createjs": "^1.0.1",
+    "ng-zorro-antd": "^1.5.0",
+    "node-sass": "^4.9.3",
+    "normalize.css": "^8.0.0",
     "rxjs": "^6.0.0",
+    "sass-loader": "^7.1.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

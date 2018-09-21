@@ -1,0 +1,28 @@
+.slidcard{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .news-card{
+    width: 300px;
+    margin-bottom: 15px;
+    .card-inner{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      label{
+        padding: 15px;
+        font-size: 20px;
+        color: #6e6e6e;
+        text-align: left;
+      }
+      img, label, video{
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<div class="slidcard">
+  <div class="news-card" *ngFor="let item of newsListData">
+    <div class="card-inner" *ngIf="item.type==='video'">
+      <label class="card-title">{{item.text}}</label>
+      <video [attr.src]="item.video" controls></video>
+    </div>
+
+    <div class="card-inner" *ngIf="item.type==='gif'">
+        <label class="card-title">{{item.text}}</label>
+        <img [attr.src]="item.gif" alt="没图">
+    </div>
+
+    <div class="card-inner" *ngIf="item.type==='image'">
+        <label class="card-title">{{item.text}}</label>
+        <img [attr.src]="item.image" alt="没图">
+    </div>
+  </div>
+</div>
+<button (click)="hanlderClick()">点我啊，就是皮</button>

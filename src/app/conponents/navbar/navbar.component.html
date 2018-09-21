@@ -1,0 +1,10 @@
+<ul class="nav-bar">
+  <li *ngFor="let item of navData" (click)="itemClickHanlder(item.index)" [class.selected]="item.index===selectIndex">
+    <span>{{item.title}}</span>
+    <app-navbar-children [isNeedShow]="isNeedShow" [selectIndex]="selectIndex" [item]="item" (voted)="onVoted($event)"></app-navbar-children>
+  </li>
+</ul>
+<input [(ngModel)]="user_input" ng-change="print(user_input)"/>
+<div>{{user_input}}</div>
+<button (click)="getChildrenMethod()" [@isShow]="state">子方法父调用</button>
+模板引用变量:<input type="text" #box (keyup)="0">{{box.value}}
