@@ -10,11 +10,14 @@ import { NavbarChildrenComponent } from './conponents/navbar-children/navbar-chi
 import { CssHighlightDirective } from './directive/css-highlight.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgZorroAntdModule } from 'ng-zorro-antd'
-import { HttpClientModule } from '@angular/common/http'
+import { HttpModule } from '@angular/http'
 import { RouterModule } from '@angular/router'
 import { appRoutes } from '../router/index';
 import { LoadingComponent } from './conponents/loading/loading.component';
-import { BlackborderComponent } from './conponents/blackborder/blackborder.component'
+import { BlackborderComponent } from './conponents/blackborder/blackborder.component';
+import { EaselJSComponent } from './conponents/easel-js/easel-js.component';
+import { FacecheckComponent } from './conponents/facecheck/facecheck.component'
+import { FacecheckService } from './api/facecheck.service'
 @NgModule({
   declarations: [
     LoadingComponent,
@@ -25,17 +28,19 @@ import { BlackborderComponent } from './conponents/blackborder/blackborder.compo
     SlidcardComponent,
     NavbarChildrenComponent,
     CssHighlightDirective,
-    BlackborderComponent
+    BlackborderComponent,
+    EaselJSComponent,
+    FacecheckComponent
   ],
   imports: [
     FormsModule,
     BrowserModule,
     BrowserAnimationsModule,
     NgZorroAntdModule.forRoot(),
-    HttpClientModule,
+    HttpModule,
     RouterModule.forRoot(appRoutes, { enableTracing: true })
   ],
-  providers: [],
+  providers: [FacecheckService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

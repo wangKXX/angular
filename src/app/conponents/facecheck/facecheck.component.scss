@@ -1,0 +1,14 @@
+.face_info{
+  width: 500px;
+  .canvas_warp{
+    width: 100%;
+    height: 300px;
+    canvas{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .input_wrap{
+    width: 100%;
+  }
+}

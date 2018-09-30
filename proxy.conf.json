@@ -1,0 +1,12 @@
+{
+  "/apidata":{
+    "target":"https://api-cn.faceplusplus.com/facepp/v3/detect",
+    "secure":false,
+    "logLevel":"debug",
+    "changeOrigin":true,
+    "pathRewrite":{
+      "^/apidata":""
+    }
+  }
+}
+

@@ -26,6 +26,7 @@ export class SlidcardComponent implements OnDestroy, OnInit {
     this.indexService.getNewsList().subscribe(data => {
       let retData: any = {}
       retData = data
+      retData = JSON.parse(retData._body)
       if (retData.code === 200) {
         this.newsListData = retData.data
       }

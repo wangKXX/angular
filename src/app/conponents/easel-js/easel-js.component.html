@@ -1,0 +1,8 @@
+<div class="canvas_wrap">
+  <div class="mean-wrap">
+    <ul>
+      <li (click)='triggerEdit()'>编辑</li>
+    </ul>
+  </div>
+  <canvas id="mycanvas" (mousedown)='mouseDownEvent($event)' (mouseup)='mouseUpEvent($event)' (mousemove)='mouseMoveEvent($event)'></canvas>
+</div>

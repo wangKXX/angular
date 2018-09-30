@@ -12,11 +12,11 @@ export class ListdataService {
     ]},
     {title: '新闻列表', index: 2,
     children: [
-      {title: '子标题', url: '#'}
+      {title: 'EaselJS', url: '/EaselJS'}
     ]},
     {title: '娱乐新潮', index: 3,
     children: [
-      {title: '子标题', url: '#'},
+      {title: '面部检测', url: '/facecheck'},
       {title: '子标题', url: '#'},
       {title: '子标题', url: '#'},
       {title: '子标题', url: '#'}
